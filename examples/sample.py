@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 import os
-from PySide2.QtWidgets import *
+try:
+    from PySide.QtGui import *
+except ImportError:
+    from PySide2.QtWidgets import *
 from ui2pyclass import *
 
 absPath = getDirname(__file__)
