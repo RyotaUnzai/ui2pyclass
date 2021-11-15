@@ -8,6 +8,7 @@ DOCUMENTATION
         >> class uiWidget(ui.baseClass, ui.formClass):
         >>     def __init__(self, parent=None, *args, **kwargs):
         >>         super(uiWidget, self).__init__(parent, *args, **kwargs)
+        >>         self.setupUi(self)
     For more details, visit https://github.com/UnzaiRyota/ui2pyclass
 
 
