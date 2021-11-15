@@ -3,6 +3,14 @@
 ui2pyclass.py can be used to convert .ui to a Python Class.
 
 
+### Required installation
+ui2pyclass uses [elementtree-xpath](https://docs.python.org/ja/2.7/library/xml.etree.elementtree.html#elementtree-xpath), needs to be `pip install lxml` installed
+
+
+
+
+
+
 ### Usage
 
 ui2pyclass.py be able to a class that inherits from baseClass and formClass, after specifying the object name of the main object in ui and .ui file path
