@@ -6,7 +6,7 @@ except ImportError:
     from PySide2.QtWidgets import *
 from ui2pyclass import *
 
-absPath = getDirname(__file__)
+absPath = os.path.dirname(__file__)
 uiPath = os.path.join(absPath, "view.ui")
 ui = ui2pyclass(ui=uiPath, objectName="ui2pyclass")
 
