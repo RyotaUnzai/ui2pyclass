@@ -9,11 +9,9 @@ ui2pyclass uses [elementtree-xpath](https://docs.python.org/ja/2.7/library/xml.e
 
 
 
-
-
 ### Usage
-
 ui2pyclass.py be able to a class that inherits from baseClass and formClass, after specifying the object name of the main object in ui and .ui file path
+
 
 ```python
 import os
@@ -38,5 +36,7 @@ def main():
 
 main()
 ```
+<img width=260 src=QtDesiner.png>
 - Also see [/examples](examples)
+
 
