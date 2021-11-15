@@ -36,7 +36,7 @@ def main():
 
 main()
 ```
-<img width=260 src=QtDesiner.png>
+<img width=400 src=QtDesiner.png>
 - Also see [/examples](examples)
 
 
