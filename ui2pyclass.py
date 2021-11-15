@@ -1,3 +1,20 @@
+# -*- coding: utf-8 -*-
+"""
+DOCUMENTATION
+    Use ui2pyclass.py to inherit .ui as a python class
+    Usage:
+        >> from ui2pyclass import *
+        >> ui = ui2pyclass(ui="<path>/<fileName>.ui", objectName="<QWidget objectName>")
+        >> class uiWidget(ui.baseClass, ui.formClass):
+        >>     def __init__(self, parent=None, *args, **kwargs):
+        >>         super(uiWidget, self).__init__(parent, *args, **kwargs)
+    For more details, visit https://github.com/UnzaiRyota/ui2pyclass
+
+
+LICENSE
+    See end of file for license (MIT, BSD) information.
+"""
+
 import xml.etree.ElementTree as xml
 from cStringIO import StringIO
 
@@ -11,9 +28,9 @@ except ImportError:
 
 
 class ui2pyclass(object):
-    def __init__(self, ui, titleName="From"):
+    def __init__(self, ui, objectName="From"):
         self.__ui = ui
-        self.__titleName = titleName
+        self.__objectName = objectName
         self.__formClass = None
         self.__baseClass = None
         self.__widgetClass = None
@@ -24,9 +41,9 @@ class ui2pyclass(object):
         uiText = uiText.decode("utf-8")
         uiText_list = uiText.split("\n")
         classStartFlag = False
-        classStart = "	def retranslateUi(self, %s):" % self.__titleName
+        classStart = "	def retranslateUi(self, %s):" % self.__objectName
         relpaceText1 = ", None, -1)"
-        relpaceText2 = "QtWidgets.QApplication.translate(\"%s\", " % self.__titleName
+        relpaceText2 = "QtWidgets.QApplication.translate(\"%s\", " % self.__objectName
         classLine = ""
         count = 0
 
