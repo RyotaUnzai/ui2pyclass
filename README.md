@@ -3,7 +3,8 @@
 ui2pyclass.py can be used to convert .ui to a Python Class.
 
 
-Usage
+### Usage
+
 ui2pyclass.py be able to a class that inherits from baseClass and formClass, after specifying the object name of the main object in ui and .ui file path
 
 ```python
@@ -29,4 +30,5 @@ def main():
 
 main()
 ```
+- Also see [/examples](examples)
 
